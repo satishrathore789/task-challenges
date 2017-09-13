@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="baseTemplate" template="/WEB-INF/layouts/default.jsp">
+		<!-- <put-attribute name="header" value="/WEB-INF/tiles/header.jsp" /> -->
+		<put-attribute name="content" value="${content}" />
+	<!-- 	<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" /> -->
+	</definition>
+
+
+<definition name="registration" extends="baseTemplate">
+<put-attribute name="content" value="/WEB-INF/tiles/registration.jsp"/>
+  </definition>
+ 
+    
+<definition name="login" extends="baseTemplate">
+ <put-attribute name="content" value="/WEB-INF/tiles/login.jsp" />
+  </definition>
+  
+<definition name="timeline" template="/WEB-INF/tiles/timeline.jsp">
+  </definition>  
+
+<definition name="editprofile" template="/WEB-INF/tiles/editprofile.jsp">
+  </definition> 
+  
+<definition name="editinterests" template="/WEB-INF/tiles/editinterests.jsp">
+  </definition>
+  
+  <definition name="editprofilePassword" template="/WEB-INF/tiles/editprofilePassword.jsp">
+  </definition>
+  
+  <definition name="edit-profile-settings" template="/WEB-INF/tiles/edit-profile-settings.jsp">
+  </definition>
+  
+  <definition name="editEducation" template="/WEB-INF/tiles/editEducation.jsp">
+  </definition> 
+  
+  <definition name="newsfeed" template="/WEB-INF/tiles/newsfeed.jsp">
+  </definition>  
+  
+  <definition name="myfriends" template="/WEB-INF/tiles/myfriends.jsp">
+  </definition>
+ 
+  <definition name="newsfeed-images" template="/WEB-INF/tiles/newsfeed-images.jsp">
+  </definition>
+  
+  <definition name="nearbypeople" template="/WEB-INF/tiles/nearbypeople.jsp">
+  </definition>   
+  
+  
+</tiles-definitions>
